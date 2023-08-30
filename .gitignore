@@ -20,5 +20,5 @@
 # Go workspace file
 go.work
 
-./run.sh
+run.sh
 .idea/
