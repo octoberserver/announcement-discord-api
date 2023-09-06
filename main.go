@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"sync"
 )
 
 var (
@@ -15,21 +14,23 @@ func main() {
 	flag.Parse()
 
 	InitDB()
+	BotInit()
+	ServeAPI()
 
-	var wg sync.WaitGroup
-
-	go func() {
-		defer wg.Done()
-		BotInit()
-	}()
-	wg.Add(1)
-
-	go func() {
-		defer wg.Done()
-		ServeAPI()
-	}()
-	wg.Add(1)
-
-	wg.Wait()
+	//var wg sync.WaitGroup
+	//
+	//go func() {
+	//	defer wg.Done()
+	//	BotInit()
+	//}()
+	//wg.Add(1)
+	//
+	//go func() {
+	//	defer wg.Done()
+	//	ServeAPI()
+	//}()
+	//wg.Add(1)
+	//
+	//wg.Wait()
 
 }
