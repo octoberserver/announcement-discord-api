@@ -5,8 +5,8 @@ import (
 )
 
 var (
-	BotToken  = flag.String("t", "", "Bot authorization token")
-	GuildID   = flag.String("g", "", "ID of the testing guild")
+	BotToken = flag.String("t", "", "Bot authorization token")
+	//GuildID   = flag.String("g", "", "ID of the testing guild")
 	ChannelID = flag.String("c", "", "ID of the testing channel")
 )
 

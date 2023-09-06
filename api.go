@@ -69,7 +69,7 @@ func ServeAPI() {
 				var reactions []ResReaction
 				if result.ReactionCount > 0 {
 					reactions = []ResReaction{
-						ResReaction{
+						{
 							EmojiID:       result.EmojiID,
 							EmojiName:     result.EmojiName,
 							ReactionCount: result.ReactionCount,
