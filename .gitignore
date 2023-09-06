@@ -20,6 +20,7 @@
 # Go workspace file
 go.work
 
+announcement-discord-api
 .db
 run.sh
 .idea/
