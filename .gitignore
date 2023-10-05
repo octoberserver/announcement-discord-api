@@ -24,3 +24,4 @@ announcement-discord-api
 .db
 run.sh
 .idea/
+token.txt
