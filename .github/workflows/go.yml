@@ -28,11 +28,11 @@ jobs:
         with:
           name: announcement-discord-api
           path: build/announcement-discord-api
-      - uses: technote-space/release-github-actions@v6
 
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
         with:
+          tag: "quack"
           artifacts: "build/announcement-discord-api"
 
     # - name: Test
