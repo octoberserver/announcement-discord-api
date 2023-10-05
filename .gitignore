@@ -20,8 +20,8 @@
 # Go workspace file
 go.work
 
-announcement-discord-api
-.db
-run.sh
+build/announcement-discord-api
+build/.db
+build/run.sh
 .idea/
-token.txt
+build/token.txt
