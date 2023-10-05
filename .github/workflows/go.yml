@@ -24,7 +24,7 @@ jobs:
         run: go build -v -o build/announcement-discord-api ./src
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: announcement-discord-api
           path: build/announcement-discord-api
