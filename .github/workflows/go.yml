@@ -30,5 +30,8 @@ jobs:
           path: build/announcement-discord-api
       - uses: technote-space/release-github-actions@v6
 
+      - name: Create GitHub Release
+        uses: technote-space/release-github-actions@v6
+
     # - name: Test
     #   run: go test -v ./...
