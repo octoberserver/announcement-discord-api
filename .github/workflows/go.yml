@@ -23,18 +23,11 @@ jobs:
       - name: Build
         run: go build -v -o build/announcement-discord-api ./src
 
-      - name: Publish Executable
-        run: |
-          mkdir -p releases
-          mv build/announcement-discord-api releases/
-        artifacts:
-          path: releases/announcement-discord-api
-
-      - name: Upload Artifact
+      - name: Publish Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: myapp
-          path: releases/announcement-discord-api
+          name: announcement-discord-api
+          path: build/announcement-discord-api
 
     # - name: Test
     #   run: go test -v ./...
