@@ -23,11 +23,12 @@ jobs:
       - name: Build
         run: go build -v -o build/announcement-discord-api ./src
 
-      - name: Publish Artifact
-        uses: actions/upload-artifact@v2
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
         with:
           name: announcement-discord-api
           path: build/announcement-discord-api
+      - uses: technote-space/release-github-actions@v6
 
     # - name: Test
     #   run: go test -v ./...
