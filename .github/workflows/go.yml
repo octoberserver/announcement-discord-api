@@ -29,11 +29,6 @@ jobs:
           name: announcement-discord-api
           path: build/announcement-discord-api
 
-      - name: Create GitHub Release
-        uses: ncipollo/release-action@v1
-        with:
-          tag: "quack"
-          artifacts: "build/announcement-discord-api"
       - name: Create Release
         id: create_release
         uses: actions/create-release@latest
